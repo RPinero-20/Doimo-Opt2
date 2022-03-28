@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en-es" dir="ltr">
+  <head>
+    <title>Opción2</title>
+    <link rel = "stylesheet" href = "templates\styles.css" type="text/css">
+    <!--FONT-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--To-top-->
+    <script src = "http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+
+    <div class="formulario" id = "form">
+      <form id = "action">
+        <div class="mb-4">
+          <label>Nombre y Apellido</label>
+          <input type = "text" id = "nombre" name = "nombre" placeholder = "Nombre">
+          <label>Correo</label>
+          <input type = "mail" id = "mail" name = "mail" placeholder = "Correo">    
+          <label>Mensaje</label>
+          <textarea placeholder = "Escriba su mensaje aquí" ></textarea>
+          <div class="flex items-center justify-between">
+                <button id="submit" type="submit">
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                </button>
+            </div>
+          <div id = "close" onclick = "hideForm()"><img class = "cerrar" src="/img/cerrar.png" alt = "cerrar"></div>
+        </div>
+      </form>
+    </div>
+
+      <header class = "oro" >
+        <div class="nav-bar">
+          <div class="bigbox">
+            <div class = "box">
+              <div class = "menu-btn"></div>
+              <nav class = "nav-main">
+                <ul class = "nav-menu" onclick="closeNav()">
+                  <li onclick = "conocenos()">Cocina</li>
+                  <li>Sala</li>
+                  <li>Dormitorio</li>
+                  <li>Baño</li>
+                  <li>Oficina</li>
+                  <li>Iluminación</li>
+                </ul>
+              </nav>
+            </div>
+            <div class = "box" onclick = "closeNav()">
+              <img class= "logo" src = "/img/Logo.png" alt = "Logotipo">
+            </div>
+            <div class = "box" onclick = "closeNav()">
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+      <center  onclick = "closeNav()">
+
+        <div class = "content">
+          <div class = "boton">
+            <h1>Comprar ahora</h1>
+          </div>
+          <div class = "boton" onclick="showForm()">
+            <h1>Contáctanos...</h1>
+          </div>
+        </div>
+
+        <div class = "encabezado">
+          <div>
+            <p class = "titulo">Historia Doimo</p>
+          </div>
+          <div>
+            <p class = "parrafo">Historia Doimo<br>Reseña actual y otros textos</p>
+          </div>
+        </div>
+        <div class = "showpic">
+          <img class = "item" src = "/img/img10.jpg" alt = "item">
+          <img class = "item" src = "/img/img11.jpg" alt = "item">
+          <img class = "item" src = "/img/img12.jpg" alt = "item">
+        </div>
+        <div class = "delivery">
+          <img class = "item" src = "/img/img11.jpg" alt="item">
+          <p class = "parrafo" id="gratis">Texto</p>
+        </div>
+        <section onclick = "closeNav()">
+          <div class="social-content">
+                <a href="#">
+                    <i class = "fab fa-instagram"></i>
+                </a>
+            <p class = "parrafo">¡Síguenos en instagram!</p>
+          </div>
+        </section>
+      </center>
+      <footer  onclick = "closeNav()">
+        <div class = "footer-content">
+          <div>
+            <ul class="list">
+              <li>Políticas de envíos</li>
+              <li>Políticas de devoluciones</li>
+              <li>Políticas de privacidad</li>
+              <li>Políticas de redes sociales</li>
+            </ul>
+          </div>
+            <span class = "tope">
+              <i class = "fas fa-angle-up" id = "to-top"></i>
+            </span>
+        </div>
+      </footer>
+      <section  onclick = "closeNav()">
+        <div class="foot-corner">
+            <p>Hecho con &#128147 por <a href = "https://www.instagram.com/raulfix/" id = "rfix" target = "_blank">@RaulFix</a></p>
+        </div>
+      </section>
+
+      <script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
+
+      <script src="templates\main.js"></script>
+
+  </body>
+</html>
