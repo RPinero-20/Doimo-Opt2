@@ -126,7 +126,7 @@ li:hover{
   height: 500px;
   justify-content:space-between;
   align-content: flex-end;
-  background: url('./img/img10.jpg') no-repeat center center/cover;
+  background: url('https://github.com/RPinero-20/Doimo-Opt2/blob/main/img/img10.jpg?raw=true') no-repeat center center/cover;
   border-radius: 10px;
   box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
 
